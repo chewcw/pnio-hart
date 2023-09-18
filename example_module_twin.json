@@ -1,0 +1,29 @@
+{
+  "config": [
+    {
+      "ip_address": "10.0.1.231",
+      "port": 34964,
+      "hart_devices": [
+        {
+          "slot_number": 1,
+          "subslot_number": 1,
+          "hart_commands": [
+            {
+              "number": 9
+            },
+            {
+              "number": 48
+            },
+            {
+              "number": 0
+            }
+          ],
+          "request_data_record_number": 80,
+          "response_data_record_number": 81,
+          "hart_device_name": "7MF4233-1FA10-2AB6-Z"
+        }
+      ],
+      "device_name": "6ES7 155-6AU01-0BN0"
+    }
+  ]
+}

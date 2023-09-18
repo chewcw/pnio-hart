@@ -1,0 +1,177 @@
+// command 48
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": false,
+    "non_primary_variable_out_of_limits": false,
+    "loop_current_saturated": false,
+    "loop_current_fixed": false,
+    "more_status_available": false,
+    "cold_start": false,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "hw_fw_error": false,
+  "diag_alarm": false,
+  "diag_warn": false,
+  "sim_mode": true,
+  "sensor_break_0": false,
+  "ram_failure": false,
+  "rom_failure": false,
+  "sim_pressure": true,
+  "sim_sensor_temperature": false,
+  "sim_el_temperature": false,
+  "watchdog_failed": false,
+  "watchdog_triggered": false,
+  "service_alarm": false
+}
+
+// command 0
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": false,
+    "non_primary_variable_out_of_limits": true,
+    "loop_current_saturated": false,
+    "loop_current_fixed": true,
+    "more_status_available": false,
+    "cold_start": true,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "device_type": "SITRANS P DS",
+  "hart_major_revision_number": 5,
+  "device_revision_level": 3,
+  "software_revision_level": 6,
+  "configuration_change_counter": 806,
+  "maintenance_required": false,
+  "device_variable_alert": false,
+  "critical_power_failure": false,
+  "failure": false,
+  "out_of_specification": false,
+  "function_check": false
+}
+
+// command 9 - main variable: pressure
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": false,
+    "non_primary_variable_out_of_limits": false,
+    "loop_current_saturated": false,
+    "loop_current_fixed": false,
+    "more_status_available": false,
+    "cold_start": false,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "device_variable_code": 0,
+  "device_variable_classification": "pressure",
+  "unit": "mbar",
+  "value": 2000
+}
+
+// command 9 - secondary variable: temperature
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": true,
+    "non_primary_variable_out_of_limits": false,
+    "loop_current_saturated": false,
+    "loop_current_fixed": false,
+    "more_status_available": false,
+    "cold_start": false,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "device_variable_code": 1,
+  "device_variable_classification": "temperature",
+  "unit": "celcius",
+  "value": 29.123735
+}
+
+// command 9 - tertiary variable: temperature
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": false,
+    "non_primary_variable_out_of_limits": true,
+    "loop_current_saturated": false,
+    "loop_current_fixed": false,
+    "more_status_available": false,
+    "cold_start": false,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "device_variable_code": 2,
+  "device_variable_classification": "temperature",
+  "unit": "celcius",
+  "value": 30.109955
+}
+
+// command 9 - quartrary variable: trimmed pressure
+{
+  "response_code": {
+    "buffer_overflow": false,
+    "communication_failure": false,
+    "longitudinal_parity_error": false,
+    "framing_error": false,
+    "overrun_error": false,
+    "vertical_parity_error": false,
+    "communication_error": false
+  },
+  "field_device_status": {
+    "primary_variable_out_of_limits": true,
+    "non_primary_variable_out_of_limits": true,
+    "loop_current_saturated": false,
+    "loop_current_fixed": false,
+    "more_status_available": false,
+    "cold_start": false,
+    "configuration_changed": false,
+    "device_malfunction": false
+  },
+  "device_variable_code": 3,
+  "device_variable_classification": "pressure",
+  "unit": "mbar",
+  "value": 1016.03296
+}

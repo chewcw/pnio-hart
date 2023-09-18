@@ -1,0 +1,17 @@
+- ip_address: "10.0.1.231"
+  port: 34964
+  # device_name is the profinet device name i.e. the model used for searching the 
+  # device when performing the lookup, for example, `6ES7 155-6AU01-0BN0`
+  device_name: "6ES7 155-6AU01-0BN0"
+  hart_devices:
+  - slot_number: 1
+    subslot_number: 1
+    hart_commands:
+      - number: 0
+      - number: 48
+      - number: 9
+        data: [0x02]
+    request_data_record_number: 80
+    response_data_record_number: 81
+    # hart_device_name is the hart device model, for example, `7MF4233-1FA10-2AB6-Z`
+    hart_device_name: "7MF4233-1FA10-2AB6-Z"
